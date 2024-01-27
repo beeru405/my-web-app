@@ -42,20 +42,16 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
             </plugin>
+
+            <!-- Maven War Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>selenium-tests</id>
-            <dependencies>
-                <!-- Add any dependencies needed for your Selenium tests here -->
-            </dependencies>
-            <build>
-                <plugins>
-                    <!-- Add plugins specific to your Selenium tests here -->
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
