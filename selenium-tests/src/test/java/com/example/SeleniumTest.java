@@ -15,7 +15,7 @@ public class SeleniumTest {
         WebDriver driver = new ChromeDriver();
 
         // Open the web application
-        driver.get("http://localhost:8080/my-web-app/");
+        driver.get("http://localhost:8081/my-web-app/");
 
         // Perform Selenium actions if needed
         driver.findElement(By.id("elementId")).click();
