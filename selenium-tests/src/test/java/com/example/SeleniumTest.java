@@ -18,6 +18,9 @@ public class SeleniumTest {
         driver.get("http://localhost:8080/my-web-app/");
 
         // Perform Selenium actions if needed
+        driver.findElement(By.id("elementId")).click();
+        driver.findElement(By.name("username")).sendKeys("yourUsername");
+         // Add more actions as needed
 
         // Close the browser
         driver.quit();
